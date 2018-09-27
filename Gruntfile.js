@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     css_url_replace: {
       task: {
         options: {
-          staticRoot: 'test/fixtures'
+          staticRoots: ['test/fixtures']
         },
         files: {
           'tmp/replaced_url.css': [

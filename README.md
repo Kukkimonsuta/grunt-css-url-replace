@@ -20,10 +20,10 @@ grunt.loadNpmTasks('grunt-css-url-replace');
 ### Options
 
 #### options.staticRoot
-Type: `String`
-Default value: `'public'`
+Type: `String[]`
+Default value: `['public']`
 
-The root static directory in your website
+The root static directories in your website
 
 ### Usage Examples
 
@@ -31,7 +31,7 @@ The root static directory in your website
 grunt.initConfig({
   css_url_replace: {
     options: {
-      staticRoot: 'public'
+      staticRoots: ['public']
     },
     files: {
       'dest/build.css': ['css/application.css', 'css/users/default.css']
